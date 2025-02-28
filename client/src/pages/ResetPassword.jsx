@@ -102,12 +102,17 @@ const ResetPassword = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-500 to-purple-200">
+    <div className="flex absolute left-5 sm:left-20 top-5 items-center justify-center">
+
       <img
         onClick={() => navigate("/")}
         src={assets.logo}
         alt=""
-        className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
-      />
+        className=" w-12 sm:w-16 cursor-pointer"
+        />
+      <span className="sm:p-4 sm:text-2xl p-2 text-xl font-semibold text-slate-900">Recoding</span>
+
+        </div>
 
       {/* Email Form */}
       {!isEmailSent && (

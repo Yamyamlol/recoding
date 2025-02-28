@@ -57,12 +57,17 @@ const Login = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen px-6 sm:px-0 bg-gradient-to-br from-blue-500 to-purple-200">
+      <div className="flex absolute left-5 sm:left-20 top-5 items-center justify-center">
+
       <img
         onClick={() => navigate("/")}
         src={assets.logo}
         alt=""
-        className="absolute left-5 sm:left-20 top-5 w-28 sm:w-32 cursor-pointer"
-      />
+        className=" w-12 sm:w-16 cursor-pointer"
+        />
+      <span className="sm:p-4 sm:text-2xl p-2 text-xl font-semibold text-slate-900">Recoding</span>
+
+        </div>
       <div className="bg-slate-900 p-10 rounded-lg shadow-lg w-full sm:w-96 text-center text-indigo-300 text-sm">
         <h2 className="text-3xl font-semibold text-white text-center mb-3">
           {state === "Sign Up" ? "Create Account" : "Login to Your Account!"}
