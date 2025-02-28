@@ -1,7 +1,7 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { assets } from "../assets/assets";
 import { AppContent } from "../context/AppContext";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Welcome = () => {
    const navigate = useNavigate();
@@ -22,7 +22,7 @@ const Welcome = () => {
         Welcome to our app
       </h2>
       <p className="mb-8 max-2-md">
-        Let's start with a quck product tour and we will have you up and running
+        Let{"'"}s start with a quck product tour and we will have you up and running
         in no time!
       </p>
       <button

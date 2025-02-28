@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import axios from "axios";
 import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
@@ -133,7 +133,7 @@ const Login = () => {
           </p>
         ) : (
           <p className="text-gray-400 text-center text-xs mt-4">
-            Don't have an Account?{" "}
+            Don{"'"}t have an Account?{" "}
             <span
               className="text-indigo-500 cursor-pointer underline"
               onClick={() => setState("Sign Up")}
