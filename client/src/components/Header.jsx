@@ -42,7 +42,7 @@ const Header = () => {
   };
   return (
     <div className="w-full flex justify-between items-center hover:sca p-4 sm:px-24 absolute top-0">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between cursor-pointer" onClick={()=>{navigate('/')}}>
         <img src={assets.logo} alt="" className="w-12 sm:w-16" />
         <span className="sm:p-4 sm:text-2xl p-2 text-xl font-semibold">
           Recoding
